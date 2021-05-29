@@ -18,11 +18,37 @@
         FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
 
-        <Grid Margin="175,108,38.4,55.8">
-            <Grid Name="GridUserControl" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <StackPanel Margin="0,0,0.4,580.8" Height="40" VerticalAlignment="Top" >
+            <StackPanel Height="40" VerticalAlignment="Top">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform Angle="60" CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF3A3E69" Offset="0.559"/>
+                        <GradientStop Color="Black"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+
+            </StackPanel>
+            <Image Source="/Help/logo.png" Width="70" HorizontalAlignment="Left" Margin="7,-54,0,0" Height="74" />
+            <Button Margin="960,-80,0,0" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="BtnClose">
+                <materialDesign:PackIcon Kind="Xamarin" Width="22" Height="22" VerticalAlignment="Center" Margin="5" />
+
+
+            </Button>
+
+        </StackPanel>
+        <Grid Margin="175,60,38.4,9.8">
+            <Grid  Name="GridUserControl" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" />
         </Grid>
 
-        <ListView  Width="170" Height="580" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Background="#FFF6F4F4"   FontSize="16" SelectedIndex="0" SelectionChanged="ListViewMenu_SelectionChanged" Name="ListViewMenu" SelectionMode="Single">
+        <ListView  Width="170" Height="581" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Background="#FFF6F4F4"   FontSize="16" SelectedIndex="0" SelectionChanged="ListViewMenu_SelectionChanged" Name="ListViewMenu" SelectionMode="Single" Margin="0,0,0,-0.2">
             <ListViewItem  Height="53" >
                 <StackPanel Orientation="Horizontal">
                     <materialDesign:PackIcon Kind="Home" Width="25" Height="25" VerticalAlignment="Center" Margin="5" />
@@ -49,31 +75,12 @@
             </ListViewItem>
         </ListView>
 
+        <Button Margin="10,581,966.4,9.8" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="BtnLogout">
+            <materialDesign:PackIcon Kind="ExitToApp" Width="22" Height="22" VerticalAlignment="Center" Margin="5" />
+        </Button>
 
 
-        <StackPanel Margin="0,0,0.4,580.8">
-            <StackPanel Height="40" VerticalAlignment="Top">
-                <StackPanel.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <LinearGradientBrush.RelativeTransform>
-                            <TransformGroup>
-                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
-                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
-                                <RotateTransform Angle="60" CenterY="0.5" CenterX="0.5"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </LinearGradientBrush.RelativeTransform>
-                        <GradientStop Color="#FF3A3E69" Offset="0.559"/>
-                        <GradientStop Color="Black"/>
-                    </LinearGradientBrush>
-                </StackPanel.Background>
 
-            </StackPanel>
-            <Image Source="/Help/logo.png" Width="70" HorizontalAlignment="Left" Margin="7,-54,0,0" Height="74" />
-
-
-        </StackPanel>
-      
 
     </Grid>
 </Window>

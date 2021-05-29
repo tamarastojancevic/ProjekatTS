@@ -1,4 +1,3 @@
-C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.csprojAssemblyReference.cache
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\MainWindow.baml
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\Pocetna.baml
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\Evidencija.g.cs
@@ -37,3 +36,13 @@ C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.csproj.Cor
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.csproj.CopyComplete
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.exe
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.pdb
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.csprojAssemblyReference.cache
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\projekat.db
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\EntityFramework.dll
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\System.Data.SQLite.dll
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\EntityFramework.xml
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\System.Data.SQLite.xml

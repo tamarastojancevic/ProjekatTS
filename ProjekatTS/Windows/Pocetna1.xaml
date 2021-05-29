@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:ProjekatTS"
              mc:Ignorable="d" 
              d:DesignHeight="551.2" d:DesignWidth="816.8">
-    <Grid Background="AliceBlue">
+    <Grid Background="Transparent">
             
     </Grid>
 </UserControl>

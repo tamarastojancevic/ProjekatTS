@@ -60,6 +60,17 @@ namespace ProjekatTS.Windows
                     break;
             }
         }
+        private void BtnClose(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+        private void BtnLogout(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            Window.GetWindow(this).Close();
+            mainWindow.ShowDialog();
+
+        }
 
         private void MenuItem_ImageFailed(object sender, ExceptionRoutedEventArgs e)
         {

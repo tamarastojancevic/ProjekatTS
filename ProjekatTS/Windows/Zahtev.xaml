@@ -6,7 +6,12 @@
              xmlns:local="clr-namespace:ProjekatTS"
              mc:Ignorable="d" 
              d:DesignHeight="551.2" d:DesignWidth="816.8">
-    <Grid Background="DarkSlateBlue">
-            
+    <Grid Background="Transparent">
+
+        <StackPanel Height="520" Width="420" Margin="10,0,369.8,0" VerticalAlignment="Top" Background="#FFEEECEC"/>
+        <StackPanel Height="500" Width="400" Margin="20,11,385.8,0" VerticalAlignment="Top" Background="White">
+
+        </StackPanel>
+
     </Grid>
 </UserControl>

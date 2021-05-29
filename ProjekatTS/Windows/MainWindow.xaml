@@ -31,17 +31,17 @@
 
             <StackPanel Orientation="Horizontal" Margin="0,0,60,0">
                 <materialDesign:PackIcon Kind="User" VerticalAlignment="Center" Margin="50,70,0,0" Foreground="#707070" />
-                <TextBox Margin="10,80,0,0" Width="340" CaretBrush="#FFBABABA" Foreground="#DDFFFFFF" BorderBrush="#89FFFFFF"></TextBox>
+                <TextBox x:Name="fullName" Margin="10,80,0,0" Width="340" CaretBrush="#FFBABABA" Foreground="#DDFFFFFF" BorderBrush="#89FFFFFF"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,0,60,0">
                 <materialDesign:PackIcon Kind="Key" VerticalAlignment="Center" Margin="50,0,0,0" Foreground="#707070" />
-                <PasswordBox  Margin="10,30,0,30" Width="340"  CaretBrush="#FFBABABA" Foreground="#DDFFFFFF" BorderBrush="#89FFFFFF"></PasswordBox>
+                <PasswordBox   x:Name="password"   Margin="10,30,0,30" Width="340"  CaretBrush="#FFBABABA" Foreground="#DDFFFFFF" BorderBrush="#89FFFFFF"></PasswordBox>
             </StackPanel>
 
         </StackPanel>
         <StackPanel Orientation="Horizontal"  Margin="0,300,0,0" HorizontalAlignment="Center" >
             <Button Click="Button2" Content="Log in" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
-            <Button Click="Button1" Content="Cancel" Height="50" Width="130" Margin="20,0,0,0" Background="#FF97A0AD" BorderBrush="{x:Null}"/>
+            <Button Click="Button1" Content="Otkaži" Height="50" Width="130" Margin="20,0,0,0" Background="#FF97A0AD" BorderBrush="{x:Null}"/>
         </StackPanel>
 
     </Grid>

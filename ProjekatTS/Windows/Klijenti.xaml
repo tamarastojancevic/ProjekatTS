@@ -5,8 +5,35 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProjekatTS"
              mc:Ignorable="d" 
-             d:DesignHeight="551.2" d:DesignWidth="816.8">
-    <Grid Background="Beige">
-            
+             d:DesignHeight="527.2" d:DesignWidth="792.8">
+    <Grid VerticalAlignment="Top" Background="Transparent" Margin="20,-230,0,0">
+
+        <StackPanel Orientation="Horizontal">
+            <Button Margin="130,0,40,0" Content="Kreiraj klijenta" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
+        <Button Content="Obriši klijenta" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
+            <Button Content="Izmeni klijenta" Margin="40,0,0,0" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
+
+        </StackPanel>
+        <DataGrid VerticalAlignment="Top" Background="White"  AutoGenerateColumns="False" Margin="0,70,-0.2,-57.6">
+
+
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="_ID" Width="*"  Binding="{Binding Path=Id}"/>
+
+                <DataGridTextColumn Header="_Ime" Width="*"  Binding="{Binding Path=Ime}"/>
+                <DataGridTextColumn Header="_PIB" Width="*"  Binding="{Binding Path=Pib}"/>
+                <DataGridTextColumn Header="_Adresa" Width="*"  Binding="{Binding Path=Adresa}"/>
+                <DataGridTextColumn Header="_Status" Width="*"  Binding="{Binding Path=Status}"/>
+
+
+
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+
     </Grid>
 </UserControl>
