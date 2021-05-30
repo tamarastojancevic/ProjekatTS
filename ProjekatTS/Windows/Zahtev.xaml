@@ -6,12 +6,34 @@
              xmlns:local="clr-namespace:ProjekatTS"
              mc:Ignorable="d" 
              d:DesignHeight="551.2" d:DesignWidth="816.8">
-    <Grid Background="Transparent">
+    <Grid VerticalAlignment="Top" Background="Transparent" Margin="20,-230,0,0">
 
-        <StackPanel Height="520" Width="420" Margin="10,0,369.8,0" VerticalAlignment="Top" Background="#FFEEECEC"/>
-        <StackPanel Height="500" Width="400" Margin="20,11,385.8,0" VerticalAlignment="Top" Background="White">
+
+        <DataGrid x:Name="requestsDataGrid"  VerticalAlignment="Top" Background="White"  AutoGenerateColumns="False" Margin="0,70,-0.2,-57.6"  CanUserSortColumns="True" CanUserAddRows="True">
+
+
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="_ID" Width="60"  Binding="{Binding id}"/>
+                <DataGridTextColumn Header="_Zahtev" Width="*"  Binding="{Binding zahtev}"/>
+                <DataGridTextColumn Header="_Cena" Width="*"  Binding="{Binding cena}"/>
+                <DataGridTextColumn Header="_Status" Width="*"  Binding="{Binding status}"/>
+                <DataGridTextColumn Header="_Poslodavac" Width="*"  Binding="{Binding employer}"/>
+
+
+
+
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" Margin="0,-200,0,0" >
+            <Button Margin="130,0,40,0" Click="unesiZahtev" Content="Unesi zahtev" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
+            <Button Content="Ukloni zahtev" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
+            <Button Content="Izmeni zahtev" Margin="40,0,0,0" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
 
         </StackPanel>
-
     </Grid>
 </UserControl>

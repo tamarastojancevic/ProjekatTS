@@ -91,9 +91,16 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Class\Global.cs" />
+    <Compile Include="Class\Prikaz.cs" />
     <Compile Include="Class\User.cs" />
     <Compile Include="Windows\Evidencija.xaml.cs">
       <DependentUpon>Evidencija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Unesiklijenta.xaml.cs">
+      <DependentUpon>Unesiklijenta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Unesizahtev.xaml.cs">
+      <DependentUpon>Unesizahtev.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Zahtev.xaml.cs">
       <DependentUpon>Zahtev.xaml</DependentUpon>
@@ -126,6 +133,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Pocetna1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Unesiklijenta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Unesizahtev.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

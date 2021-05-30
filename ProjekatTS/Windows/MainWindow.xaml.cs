@@ -28,7 +28,7 @@ namespace ProjekatTS
             InitializeComponent();
         }
 
-        private void MouseDownDrag(object sender, MouseButtonEventArgs e)
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
         }
@@ -48,7 +48,7 @@ namespace ProjekatTS
         {
 
 
-            SQLiteConnection sQLiteConnection = new SQLiteConnection("Data Source= projekat.db, Version=3;");
+            SQLiteConnection sQLiteConnection = new SQLiteConnection("Data Source= projekat.db");
             if (sQLiteConnection.State == ConnectionState.Closed)
                 sQLiteConnection.Open();
 
@@ -73,7 +73,7 @@ namespace ProjekatTS
                 }
                 else
                 {
-                    MessageBox.Show("Uneli ste pogrešnu pifru ili korisničko ime. Pokušajte ponovo.");
+                    MessageBox.Show("Uneli ste pogrešnu šifru ili korisničko ime. Pokušajte ponovo.");
                 }
 
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,5 +14,8 @@ namespace ProjekatTS.Class
         public static string password;
 
         public static IEnumerable<User> Users { get; internal set; }
+        public static DataSet DSglobal { get; internal set; }
+
+       
     }
 }
