@@ -72,6 +72,15 @@ namespace ProjekatTS.Windows
 
         }
 
+
+        private void Help(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            Window.GetWindow(this).Close();
+            mainWindow.ShowDialog();
+
+        }
+
         private void MenuItem_ImageFailed(object sender, ExceptionRoutedEventArgs e)
         {
 
