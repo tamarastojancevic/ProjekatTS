@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProjekatTS"
              mc:Ignorable="d" 
-             d:DesignHeight="527.2" d:DesignWidth="792.8">
+         d:DesignHeight="552" d:DesignWidth="790">
     <Grid VerticalAlignment="Top" Background="Transparent" Margin="20,-200,0,0">
 
     

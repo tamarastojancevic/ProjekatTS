@@ -37,11 +37,7 @@
 
             </StackPanel>
             <Image Source="/Help/logo.png" Width="70" HorizontalAlignment="Left" Margin="7,-54,0,0" Height="74" />
-            <Button x:Name="Otkazi" Margin="660,-80,0,0" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
-                <materialDesign:PackIcon Kind="Xamarin" Width="22" Height="22" VerticalAlignment="Center"  Margin="5" />
-
-
-            </Button>
+          
 
         </StackPanel>
         <StackPanel Height="400">

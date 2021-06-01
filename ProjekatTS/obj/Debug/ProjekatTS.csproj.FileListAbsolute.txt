@@ -49,7 +49,6 @@ C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\Unesiklijenta
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\Unesiklijenta.baml
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\Unesizahtev.g.cs
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\Unesizahtev.baml
-C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.csprojAssemblyReference.cache
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\Common.Logging.Core.dll
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\Common.Logging.dll

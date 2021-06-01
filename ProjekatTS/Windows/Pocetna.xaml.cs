@@ -71,7 +71,7 @@ namespace ProjekatTS.Windows
             mainWindow.ShowDialog();
 
         }
-
+      
 
         private void Help(object sender, RoutedEventArgs e)
         {

@@ -37,11 +37,7 @@
 
             </StackPanel>
             <Image Source="/Help/logo.png" Width="70" HorizontalAlignment="Left" Margin="7,-54,0,0" Height="74" />
-            <Button Margin="660,-80,0,0" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
-                <materialDesign:PackIcon Kind="Xamarin" Width="22" Height="22" VerticalAlignment="Center" Margin="5" />
-
-
-            </Button>
+      
 
         </StackPanel>
         <StackPanel Height="300">
@@ -65,7 +61,7 @@
 
         <StackPanel Orientation="Horizontal" Width="700" Height="100" Margin="0,240,0,0">
             <Button Content="Sačuvaj" Margin="180,0,0,0" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
-            <Button Content="Otkaži" x:Name="otkazi" Margin="80,0,0,0" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
+            <Button Content="Otkaži" Margin="80,0,0,0" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
 
         </StackPanel>
     </Grid>

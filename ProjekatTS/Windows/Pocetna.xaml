@@ -41,9 +41,10 @@
             <Button Margin="960,-80,0,0" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="BtnClose">
                 <materialDesign:PackIcon Kind="Xamarin" Width="22" Height="22" VerticalAlignment="Center" Margin="5" />
             </Button>
+          
 
         </StackPanel>
-        <Grid Margin="175,60,38.4,9.8">
+        <Grid Margin="175,60,38.4,9.8" Width="790" Height="551">
             <Grid  Name="GridUserControl" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" />
         </Grid>
 
