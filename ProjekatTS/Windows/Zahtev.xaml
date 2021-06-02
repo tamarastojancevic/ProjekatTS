@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:ProjekatTS"
              mc:Ignorable="d" 
              d:DesignHeight="552" d:DesignWidth="790">
-    <Grid VerticalAlignment="Top" Background="Transparent" Margin="20,-200,0,0">
+    <Grid VerticalAlignment="Top" Background="Transparent" Margin="20,-200,0,0" >
 
 
         <DataGrid x:Name="requestsDataGrid"  VerticalAlignment="Top" Background="White"  AutoGenerateColumns="False" Margin="0,200,-0.2,-57.6"  CanUserSortColumns="True" CanUserAddRows="True">

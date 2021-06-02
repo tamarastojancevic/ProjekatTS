@@ -8,6 +8,9 @@ namespace ProjekatTS.Class
 {
     class User
     {
+        private string pib;
+        private string fullName;
+        private string adresa;
 
         public User() { }
 
@@ -15,11 +18,17 @@ namespace ProjekatTS.Class
         {
             Username = username;
             Password = password;
+            FullName = fullName;
+            Pib = pib;
+            Adresa = adresa;
       
         }
 
         public string Username { get; set; }
         public string Password { get; set; }
+        public string FullName { get; set; }
+        public string Pib { get; set; }
+        public string Adresa { get; set; }
 
 
 

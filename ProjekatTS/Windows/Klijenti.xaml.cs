@@ -30,9 +30,10 @@ namespace ProjekatTS.Windows
 
         private void unesiKlijenta(object sender, RoutedEventArgs e)
         {
-            Unesiklijenta unesiKlijenta = new Unesiklijenta();
-            Window.GetWindow(this).Show();
-            unesiKlijenta.ShowDialog();
+            Windows.Unesiklijenta unesiKlijenta = new Windows.Unesiklijenta();
+            unesiKlijenta.Show();
+
+            
 
         }
         private void DataGrid(object sender, RoutedEventArgs e)

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,8 +26,35 @@ namespace ProjekatTS.Windows
             InitializeComponent();
         }
 
- 
 
-    
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
+      
+
+        private void BtnSave(object sender, System.EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source= projekat.db;Integrated Security=True;User Instance=True");
+            SqlCommand cmd = new SqlCommand("sp_insert", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@fullName", fullName.Text);
+            cmd.Parameters.AddWithValue("@pib", pib.Text);
+            cmd.Parameters.AddWithValue("@adresa", adresa.Text);
+         
+            con.Open();
+            int i = cmd.ExecuteNonQuery();
+
+            con.Close();
+
+            if (i != 0)
+            {
+                MessageBox.Show(i + "Klijent uspešno sačuvan");
+            }
+
+
+        }
     }
 }

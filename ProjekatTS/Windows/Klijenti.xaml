@@ -15,11 +15,11 @@
 
             <DataGrid.Columns>
 
-                <DataGridTextColumn Header="_ID" Width="*"  Binding="{Binding id}"/>
+                <DataGridTextColumn Header="_ID" Width="55"  Binding="{Binding id}"/>
                 <DataGridTextColumn Header="_Ime" Width="*"  Binding="{Binding ime}"/>
                 <DataGridTextColumn Header="_PIB" Width="*"  Binding="{Binding pib}"/>
                 <DataGridTextColumn Header="_Adresa" Width="*"  Binding="{Binding adresa}"/>
-                <DataGridTextColumn Header="_Status" Width="*"  Binding="{Binding status}"/>
+                <DataGridTextColumn Header="_Status" Width="100"  Binding="{Binding status}"/>
 
 
 
