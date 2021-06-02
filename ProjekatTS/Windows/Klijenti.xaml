@@ -19,6 +19,7 @@
                 <DataGridTextColumn Header="_Ime" Width="*"  Binding="{Binding ime}"/>
                 <DataGridTextColumn Header="_PIB" Width="*"  Binding="{Binding pib}"/>
                 <DataGridTextColumn Header="_Adresa" Width="*"  Binding="{Binding adresa}"/>
+                <DataGridTextColumn Header="_Kontakt" Width="*"  Binding="{Binding contact}"/>
                 <DataGridTextColumn Header="_Status" Width="100"  Binding="{Binding status}"/>
 
 

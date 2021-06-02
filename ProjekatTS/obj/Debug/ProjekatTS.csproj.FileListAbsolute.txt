@@ -75,3 +75,9 @@ C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\itext.pdfa.xml
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\itext.sign.xml
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\itext.styledxmlparser.xml
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\itext.svg.xml
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\ErrorWindow.g.cs
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\PdfSharp-WPF.dll
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\PdfSharp.Xps.dll
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\SimpleWPFReporting.dll
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\SimpleWPFReporting.xml
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\ErrorWindow.baml

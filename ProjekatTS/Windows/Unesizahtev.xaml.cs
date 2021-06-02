@@ -27,9 +27,9 @@ namespace ProjekatTS.Windows
         {
             DragMove();
         }
-        private void BtnCancel(object sender, MouseButtonEventArgs e)
+        private void ButtonCancel(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
     }

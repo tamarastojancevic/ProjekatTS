@@ -73,8 +73,9 @@ namespace ProjekatTS
                 }
                 else
                 {
-                   
-                    MessageBox.Show("Uneli ste pogrešnu šifru ili korisničko ime. Pokušajte ponovo.");
+
+                    Windows.ErrorWindow errorWindow = new Windows.ErrorWindow();
+                    errorWindow.Show();
                 }
 
 
@@ -88,7 +89,8 @@ namespace ProjekatTS
                 sQLiteConnection.Close();
             }
         }
-            private bool isUserExist(string fullName, string password)
+      
+        private bool isUserExist(string fullName, string password)
             {
                 foreach (Class.User user in Class.Global.Users)
                 {

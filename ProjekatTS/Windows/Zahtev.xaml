@@ -18,6 +18,7 @@
                 <DataGridTextColumn Header="_ID" Width="60"  Binding="{Binding id}"/>
                 <DataGridTextColumn Header="_Zahtev" Width="*"  Binding="{Binding zahtev}"/>
                 <DataGridTextColumn Header="_Cena" Width="*"  Binding="{Binding cena}"/>
+                <DataGridTextColumn Header="_Datum predaje" Width="*"  Binding="{Binding datum}"/>
                 <DataGridTextColumn Header="_Status" Width="*"  Binding="{Binding status}"/>
                 <DataGridTextColumn Header="_Poslodavac" Width="*"  Binding="{Binding employer}"/>
 

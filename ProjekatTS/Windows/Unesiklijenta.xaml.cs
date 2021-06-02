@@ -33,7 +33,10 @@ namespace ProjekatTS.Windows
             DragMove();
         }
 
-      
+        private void ButtonOtkazi(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
 
         private void BtnSave(object sender, System.EventArgs e)
         {
