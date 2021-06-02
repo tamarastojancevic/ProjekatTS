@@ -37,7 +37,7 @@ namespace ProjekatTS.Windows
 
         private void BtnSave(object sender, System.EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source= projekat.db;Integrated Security=True;User Instance=True");
+            SqlConnection con = new SqlConnection("Data Source= projekat.db;Integrated Security=True;User Instance=True");
             SqlCommand cmd = new SqlCommand("sp_insert", con);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@fullName", fullName.Text);
@@ -56,5 +56,6 @@ namespace ProjekatTS.Windows
 
 
         }
+    
     }
 }

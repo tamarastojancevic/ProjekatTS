@@ -30,9 +30,8 @@
 
         </DataGrid>
         <StackPanel Orientation="Horizontal" Margin="0,600,0,0" >
-            <Button Margin="130,0,40,0" Click="unesiZahtev" Content="Unesi zahtev" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
+            <Button Margin="230,0,40,0" Click="unesiZahtev" Content="Unesi zahtev" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
             <Button Content="Ukloni zahtev" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
-            <Button Content="Izmeni zahtev" Margin="40,0,0,0" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
 
         </StackPanel>
     </Grid>

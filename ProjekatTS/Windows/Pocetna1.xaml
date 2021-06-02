@@ -6,13 +6,10 @@
              xmlns:local="clr-namespace:ProjekatTS"
              mc:Ignorable="d" 
              d:DesignHeight="552" d:DesignWidth="790">
-    <Grid Background="Transparent">
+    <Grid Background="White">
+        <Calendar HorizontalAlignment="Left" Margin="66,10,0,0" VerticalAlignment="Top" Width="314" Height="333"/>
 
-        <Calendar Margin="0,-8,0.4,0" BorderBrush="{x:Null}" Foreground="#DD000000" Background="{x:Null}" FirstDayOfWeek="Monday">
 
-         
-
-        </Calendar>
 
     </Grid>
 </UserControl>

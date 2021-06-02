@@ -24,5 +24,6 @@ namespace ProjekatTS.Windows
         {
             InitializeComponent();
         }
+
     }
 }
