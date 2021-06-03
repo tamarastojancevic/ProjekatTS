@@ -81,3 +81,6 @@ C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\PdfSharp.Xps.dll
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\SimpleWPFReporting.dll
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\SimpleWPFReporting.xml
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\ErrorWindow.baml
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\Csv\Klijenti.csv
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\bin\Debug\Csv\Zahtevi.csv
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.csprojAssemblyReference.cache

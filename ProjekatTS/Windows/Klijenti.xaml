@@ -8,28 +8,20 @@
          d:DesignHeight="552" d:DesignWidth="790">
     <Grid VerticalAlignment="Top" Background="Transparent" Margin="20,-200,0,0">
 
-    
-        <DataGrid x:Name="clientDataGrid" VerticalAlignment="Top" Background="White"  AutoGenerateColumns="False" Margin="0,200,-0.2,-57.6">
+
+        <DataGrid x:Name="clientDataGrid" VerticalAlignment="Top" Background="White" CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="True"  Margin="0,200,-0.2,-57.6">
 
 
 
             <DataGrid.Columns>
 
-                <DataGridTextColumn Header="_ID" Width="55"  Binding="{Binding id}"/>
-                <DataGridTextColumn Header="_Ime" Width="*"  Binding="{Binding ime}"/>
-                <DataGridTextColumn Header="_PIB" Width="*"  Binding="{Binding pib}"/>
-                <DataGridTextColumn Header="_Adresa" Width="*"  Binding="{Binding adresa}"/>
-                <DataGridTextColumn Header="_Kontakt" Width="*"  Binding="{Binding contact}"/>
-                <DataGridTextColumn Header="_Status" Width="100"  Binding="{Binding status}"/>
-
-
-
+             
 
             </DataGrid.Columns>
 
 
         </DataGrid>
-        <StackPanel Orientation="Horizontal" Margin="0,600,0,0" >
+        <StackPanel Orientation="Horizontal" Margin="-30,600,0,0" >
             <Button Margin="230,0,40,0" Click="unesiKlijenta" Content="Unesi klijenta" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
             <Button Content="Obriši klijenta" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
 
