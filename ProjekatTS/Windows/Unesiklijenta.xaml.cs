@@ -25,8 +25,8 @@ namespace ProjekatTS.Windows
         {
             InitializeComponent();
         }
-
-
+        private const string ERROR_MESSAGE_NOTFILLED = "Popunite sva polja!";
+        private const string ERROR_MESSAGE_NOTUNIQUE = "Korisničko ime već postoji.";
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -50,7 +50,10 @@ namespace ProjekatTS.Windows
             return false;
         }
 
-     
+
+  
+
+    
 
         private void BtnSave(object sender, System.EventArgs e)
         {
@@ -73,6 +76,7 @@ namespace ProjekatTS.Windows
 
 
         }
-    
+
+
     }
 }

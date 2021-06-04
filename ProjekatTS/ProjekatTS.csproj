@@ -139,8 +139,14 @@
     <Compile Include="Class\Prikaz.cs" />
     <Compile Include="Class\StatusKlijenta.cs" />
     <Compile Include="Class\User.cs" />
+    <Compile Include="Windows\ErrorPrazno.xaml.cs">
+      <DependentUpon>ErrorPrazno.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ErrorWindow.xaml.cs">
       <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ErrorZauzeto.xaml.cs">
+      <DependentUpon>ErrorZauzeto.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Evidencija.xaml.cs">
       <DependentUpon>Evidencija.xaml</DependentUpon>
@@ -154,7 +160,15 @@
     <Compile Include="Windows\Zahtev.xaml.cs">
       <DependentUpon>Zahtev.xaml</DependentUpon>
     </Compile>
+    <Page Include="Windows\ErrorPrazno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\ErrorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ErrorZauzeto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
