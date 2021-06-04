@@ -137,6 +137,7 @@
     </ApplicationDefinition>
     <Compile Include="Class\Global.cs" />
     <Compile Include="Class\Prikaz.cs" />
+    <Compile Include="Class\StatusKlijenta.cs" />
     <Compile Include="Class\User.cs" />
     <Compile Include="Windows\ErrorWindow.xaml.cs">
       <DependentUpon>ErrorWindow.xaml</DependentUpon>

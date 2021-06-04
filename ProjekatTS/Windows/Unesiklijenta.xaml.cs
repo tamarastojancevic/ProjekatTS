@@ -37,6 +37,20 @@ namespace ProjekatTS.Windows
         {
             Close();
         }
+        private bool AreAllFieldsFilled()
+        {
+            if (fullName != null &&
+                pib != null &&
+                adresa != null &&
+                kontakt != null &&
+                status.SelectedItem != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+     
 
         private void BtnSave(object sender, System.EventArgs e)
         {
