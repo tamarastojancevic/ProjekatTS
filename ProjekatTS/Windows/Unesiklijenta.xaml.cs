@@ -26,8 +26,7 @@ namespace ProjekatTS.Windows
         {
             InitializeComponent();
         }
-        private const string ERROR_MESSAGE_NOTFILLED = "Popunite sva polja!";
-        private const string ERROR_MESSAGE_NOTUNIQUE = "Korisničko ime već postoji.";
+        
         private readonly UserController userController;
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -59,7 +58,19 @@ namespace ProjekatTS.Windows
             return false;
         }
 
+        private User RegisterUser(object sender)
+        {
+            var newUser = new User(
+                    fullName.Text,
+                    pib.Text,
+                    adresa.Text,
+                    kontakt.Text,
+                    (status)Enum.Parse(typeof(UserRole), status.SelectedItem.ToString())
+                );
+            return userControl.Create(newUser);
 
+
+        }
 
 
         private void KreirajKorisnika(object sender, System.EventArgs e)
