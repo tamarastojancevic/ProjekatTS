@@ -23,5 +23,13 @@ namespace ProjekatTS.Windows
         {
             InitializeComponent();
         }
+        private void ButtonOk(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
     }
 }

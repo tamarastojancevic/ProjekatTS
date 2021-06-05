@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Tweetinvi.Controllers.User;
 
 namespace ProjekatTS.Windows
 {
@@ -27,7 +28,7 @@ namespace ProjekatTS.Windows
         }
         private const string ERROR_MESSAGE_NOTFILLED = "Popunite sva polja!";
         private const string ERROR_MESSAGE_NOTUNIQUE = "Korisničko ime već postoji.";
-
+        private readonly UserController userController;
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
@@ -50,12 +51,18 @@ namespace ProjekatTS.Windows
             return false;
         }
 
+        private bool CheckIfUserNameUnique()
+        {
+            string fullName = fullName.Text;
+            if (userController.CheckIfUserNameUnique(fullName))
+                return true;
+            return false;
+        }
 
-  
 
-    
 
-        private void BtnSave(object sender, System.EventArgs e)
+
+        private void KreirajKorisnika(object sender, System.EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source= projekat.db;Integrated Security=True;User Instance=True");
             SqlCommand cmd = new SqlCommand("sp_insert", con);
@@ -76,7 +83,47 @@ namespace ProjekatTS.Windows
 
 
         }
+        private void BtnSave(object sender, System.EventArgs e)
+        {
+            if (AreAllFieldsFilled() && CheckIfUserNameUnique())
+            {
+                KreirajKorisnika(sender);
+                MainWindow window = new MainWindow();
+                Close();
+                window.Show();
+            }
+            else if (CheckIfUserNameUnique())
+            {
+                ShowError_NotUnique();
+            }
+            else
+            {
+                ShowError_NotFilled();
+            }
 
+        }
+
+        private void KreirajKorisnika(object sender)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ShowError_NotFilled()
+        {
+            Windows.ErrorPrazno errorPrazno = new Windows.ErrorPrazno();
+            errorPrazno.Show();
+
+
+
+        }
+        private void ShowError_NotUnique()
+        {
+            Windows.ErrorZauzeto errorZauzeto = new Windows.ErrorZauzeto();
+            errorZauzeto.Show();
+
+
+
+        }
 
     }
 }

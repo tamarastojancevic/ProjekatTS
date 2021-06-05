@@ -43,7 +43,7 @@
         </StackPanel>
         <TextBlock Text="GREŠKA" FontSize="20" HorizontalAlignment="Center"  Margin="0,-100,0,0" Foreground="#DD000000" Height="23" FontWeight="Bold"/>
 
-        <TextBlock HorizontalAlignment="Center"  Text="Korisničko ime već postoji!" FontSize="20" Margin="0,93,-28.6,107.8"/>
+        <TextBlock HorizontalAlignment="Center"  Text="Ime klijenta već postoji!" FontSize="20" Margin="0,93,-28.6,107.8"/>
         <TextBlock HorizontalAlignment="Center" Text=" Pokušajte ponovo" FontSize="20" Margin="10,117,0,107.8"/>
 
         <Button VerticalAlignment="Bottom" IsDefault="True" Click="ButtonOk" Content="Ok" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD" Margin="157.4,160,157.4,38.8"/>
