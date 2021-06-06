@@ -15,7 +15,6 @@ namespace ProjekatTS.Windows
             InitializeComponent();
         }
 
-
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
@@ -24,6 +23,10 @@ namespace ProjekatTS.Windows
         internal static void ShowDialogue()
         {
             throw new NotImplementedException();
+        }
+
+        private void BtnHelp(object sender, SelectionChangedEventArgs e)
+        {
         }
         private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

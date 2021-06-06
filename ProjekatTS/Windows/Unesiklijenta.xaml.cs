@@ -27,7 +27,8 @@ namespace ProjekatTS.Windows
             InitializeComponent();
         }
 
-
+        private const string ERROR_MESSAGE_NOTFILLED = "All fields are mandatory, please fill them!";
+        private const string ERROR_MESSAGE_NOTUNIQUE = "There is already medcine with the same ID!";
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -39,11 +40,23 @@ namespace ProjekatTS.Windows
             Close();
         }
 
+        private bool AreAllFieldsFilled()
+        {
+            if (fullName != null &&
+                pib != null &&
+                adresa != null &&
+                kontakt != null ) 
+            {
+                return true;
+            }
+            return false;
+        }
+       
         private void BtnSave(object sender, System.EventArgs e)
         {
             SQLiteConnection con = new SQLiteConnection("Data Source= projekat.db");
             con.Open();
-            SQLiteCommand cmd = new SQLiteCommand("insert into employers(Ime, PIB, Adresa, Status, Kontakt) values (@fullName, @pib, @adresa, 0, @kontakt)", con);
+            SQLiteCommand cmd = new SQLiteCommand("insert into employers(Ime, PIB, Adresa, Status, Kontakt) values (@fullName, @pib, @adresa, 1, @kontakt)", con);
             cmd.Parameters.AddWithValue("@fullName", fullName.Text);
             cmd.Parameters.AddWithValue("@pib", pib.Text);
             cmd.Parameters.AddWithValue("@adresa", adresa.Text);
@@ -57,8 +70,9 @@ namespace ProjekatTS.Windows
             if (i != 0)
             {
                 MessageBox.Show("Klijent uspešno sačuvan");
+                Close();
             }
-
+        
 
         }
     

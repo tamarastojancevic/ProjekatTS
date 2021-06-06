@@ -43,7 +43,7 @@
         <StackPanel>
             <TextBlock Text="Istorija zahteva" FontSize="20" HorizontalAlignment="Center"  Margin="0,70,0,0" Foreground="#DD000000" Height="23" FontWeight="Bold"/>
 
-            <DataGrid x:Name="requestDataGrid" VerticalAlignment="Top" Background="White" CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="True"  Margin="10,20,10,0">
+            <DataGrid Width="770.4" Height="300" x:Name="requestDataGrid" VerticalAlignment="Top" Background="White" CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="True"  Margin="10,20,10,0">
 
 
 

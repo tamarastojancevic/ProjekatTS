@@ -9,7 +9,7 @@
     <Grid VerticalAlignment="Top" Background="Transparent" Margin="20,-200,0,0">
 
 
-        <DataGrid x:Name="clientDataGrid" VerticalAlignment="Top" Background="White" CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="True"  Margin="0,200,-0.2,-57.6">
+        <DataGrid Width="770.4" Height="340" x:Name="clientDataGrid" VerticalAlignment="Top" Background="White" CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="True"  Margin="0,200,-0.2,-57.6">
 
 
 
