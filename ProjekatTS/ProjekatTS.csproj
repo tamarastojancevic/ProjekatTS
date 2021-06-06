@@ -145,6 +145,9 @@
     <Compile Include="Windows\Istorija.xaml.cs">
       <DependentUpon>Istorija.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Istorija2.xaml.cs">
+      <DependentUpon>Istorija2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Unesiklijenta.xaml.cs">
       <DependentUpon>Unesiklijenta.xaml</DependentUpon>
     </Compile>
@@ -159,6 +162,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Istorija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Istorija2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

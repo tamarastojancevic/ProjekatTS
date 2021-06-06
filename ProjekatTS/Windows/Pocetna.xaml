@@ -73,10 +73,12 @@
         <Button Margin="10,581,966.4,9.8" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="BtnLogout">
             <materialDesign:PackIcon Kind="ExitToApp" Width="22" Height="22" VerticalAlignment="Center" Margin="5" RenderTransformOrigin="0.445,0.514" />
         </Button>
-        <Button Click="Istorija" Margin="10,501,966.4,9.8"  Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
+        <Button Click="Istorija" Margin="10,450,966.4,9.8"  Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
+            <materialDesign:PackIcon Kind="FolderAccount" Width="22" Height="22" VerticalAlignment="Center" Margin="5" />
+        </Button>
+        <Button Click="IstorijaZahteva" Margin="10,517,966.4,9.8"  Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
             <materialDesign:PackIcon Kind="Book" Width="22" Height="22" VerticalAlignment="Center" Margin="5" />
         </Button>
-
 
 
 

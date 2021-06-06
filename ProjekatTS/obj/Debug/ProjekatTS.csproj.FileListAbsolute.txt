@@ -174,3 +174,5 @@ C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatT
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\Pocetna1.baml
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\Unesiklijenta.baml
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\Unesizahtev.baml
+C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\Istorija2.g.cs
+C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\Istorija2.baml
