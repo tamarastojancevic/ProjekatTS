@@ -27,7 +27,7 @@ namespace ProjekatTS.Windows
             InitializeComponent();
             RequestsDataGrid();
         }
-        private void unesiZahtev(object sender, RoutedEventArgs e)
+        private void UnesiZahtev(object sender, RoutedEventArgs e)
         {
             Unesizahtev unesiZahtev = new Unesizahtev();
             Window.GetWindow(this).Show();
@@ -42,7 +42,7 @@ namespace ProjekatTS.Windows
                 SQLiteConnection connection = new SQLiteConnection("Data Source=projekat.db;");
                 connection.Open();
                 SQLiteCommand command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM requests";
+                command.CommandText = "SELECT * FROM requests where Status = 1";
                 SQLiteDataAdapter DB = new SQLiteDataAdapter(command.CommandText, connection);
                 connection.Close();
 
@@ -62,6 +62,14 @@ namespace ProjekatTS.Windows
                 MessageBox.Show(i.Message);
             }
 
+
+
+        }
+        private void unesiZahtev(object sender, RoutedEventArgs e)
+        {
+
+            Windows.Unesizahtev unesiZahtev = new Windows.Unesizahtev();
+            unesiZahtev.Show();
 
 
         }

@@ -25,6 +25,7 @@ namespace ProjekatTS.Windows
         public Klijenti()
         {
             InitializeComponent();
+            ClientDataGrid();
         }
 
         private void unesiKlijenta(object sender, RoutedEventArgs e)
@@ -44,7 +45,7 @@ namespace ProjekatTS.Windows
                 SQLiteConnection connection = new SQLiteConnection("Data Source=projekat.db;");
                 connection.Open();
                 SQLiteCommand command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM employers where status = 0";
+                command.CommandText = "SELECT * FROM employers where status = 1";
                 SQLiteDataAdapter DB = new SQLiteDataAdapter(command.CommandText, connection);
                 connection.Close();
 

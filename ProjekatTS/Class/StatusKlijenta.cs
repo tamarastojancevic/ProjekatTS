@@ -8,6 +8,6 @@ namespace ProjekatTS.Class
 {
     class StatusKlijenta
     {
-        public enum KorisnikovStatus { Aktivan, Neaktivan };
+        public enum KlijentovStatus { Neaktivan, Aktivan };
     }
 }
