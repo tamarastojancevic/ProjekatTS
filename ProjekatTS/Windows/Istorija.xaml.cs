@@ -24,6 +24,7 @@ namespace ProjekatTS.Windows
         public Istorija()
         {
             InitializeComponent();
+            ClientDataGrid();
         }
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -40,7 +41,7 @@ namespace ProjekatTS.Windows
                 SQLiteConnection connection = new SQLiteConnection("Data Source=projekat.db;");
                 connection.Open();
                 SQLiteCommand command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM employers where status = 0";
+                command.CommandText = "SELECT * FROM employers";
                 SQLiteDataAdapter DB = new SQLiteDataAdapter(command.CommandText, connection);
                 connection.Close();
 

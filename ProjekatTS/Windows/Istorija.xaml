@@ -41,7 +41,7 @@
             </Button>
         </StackPanel>
         <StackPanel>
-            <DataGrid x:Name="clientDataGrid" VerticalAlignment="Top" Background="White" CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="True"  Margin="0,100,0,0">
+            <DataGrid x:Name="clientDataGrid" VerticalAlignment="Top" Background="White" CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="True"  Margin="10,100,10,0">
 
 
 
