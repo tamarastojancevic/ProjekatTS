@@ -60,10 +60,7 @@
                 <TextBlock Text="Kontakt:" Margin="50,0,0,0"/>
                 <TextBox x:Name="kontakt" Margin="37,-10,0,0" Width="390" CaretBrush="#FFBABABA" Foreground="#FC282828" BorderBrush="#89FFFFFF"></TextBox>
             </StackPanel>
- <StackPanel Orientation="Horizontal" Margin="60,20,60,0">
-                <TextBlock Text="Status:" Margin="50,0,0,0"/>
-                <ComboBox x:Name="status" Margin="37,-10,0,0" Width="390" Foreground="#FC282828" BorderBrush="#89FFFFFF" />
-            </StackPanel>
+ 
 
 
         </StackPanel>

@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data;
 using System.Data.SQLite;
+using System.Diagnostics;
 
 namespace ProjekatTS.Windows
 {
@@ -42,7 +43,7 @@ namespace ProjekatTS.Windows
                 SQLiteConnection connection = new SQLiteConnection("Data Source=projekat.db;");
                 connection.Open();
                 SQLiteCommand command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM requests where Status = 1";
+                command.CommandText = "SELECT requests.id, requests.zahtev, requests.cena, requests.datum, employers.Ime FROM requests inner join employers on employers.id = requests.klijent where requests.status = 1";
                 SQLiteDataAdapter DB = new SQLiteDataAdapter(command.CommandText, connection);
                 connection.Close();
 
@@ -63,6 +64,21 @@ namespace ProjekatTS.Windows
             }
 
 
+
+        }
+
+        private void BtnDelete()
+        {
+            Debug.WriteLine("fffffffffffffffffffffff");
+            SQLiteConnection connection = new SQLiteConnection("Data Source=projekat.db;");
+            connection.Open();
+          
+            SQLiteCommand command = new SQLiteCommand("UPDATE requests set status=0 where id=@id",connection);
+            command.Parameters.AddWithValue("@id",Int32.Parse( requestsDataGrid.SelectedItem.ToString()));
+            Debug.WriteLine(requestsDataGrid.SelectedItem.ToString());
+            command.ExecuteNonQuery();
+            connection.Close();
+            
 
         }
         private void unesiZahtev(object sender, RoutedEventArgs e)

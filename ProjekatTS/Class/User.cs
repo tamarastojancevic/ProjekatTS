@@ -12,6 +12,8 @@ namespace ProjekatTS.Class
         private string pib;
         private string fullName;
         private string adresa;
+        
+
 
         public User() { }
 

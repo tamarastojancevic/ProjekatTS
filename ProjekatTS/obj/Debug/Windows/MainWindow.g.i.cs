@@ -12,7 +12,6 @@
 using MaterialDesignThemes.Wpf;
 using MaterialDesignThemes.Wpf.Converters;
 using MaterialDesignThemes.Wpf.Transitions;
-using ProjekatTS;
 using System;
 using System.Diagnostics;
 using System.Windows;

@@ -144,7 +144,6 @@ C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatT
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.csprojAssemblyReference.cache
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\Istorija.baml
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\Klijenti.baml
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\MainWindow.baml
@@ -176,3 +175,4 @@ C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatT
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\Unesizahtev.baml
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\Istorija2.g.cs
 C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\Windows\Istorija2.baml
+C:\Users\Tamara\Desktop\Projektovanje softvera prepravljeno\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.csprojAssemblyReference.cache
