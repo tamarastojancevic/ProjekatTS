@@ -46,12 +46,9 @@ namespace ProjekatTS.Windows
                     GridUserControl.Children.Add(new Windows.Zahtev());
                     break;
 
-                case 3:
-                    GridUserControl.Children.Clear();
-                    GridUserControl.Children.Add(new Windows.Evidencija());
-                    break;
+            
 
-                case 4:
+                case 3:
                     GridUserControl.Children.Clear();
 
 
@@ -78,6 +75,13 @@ namespace ProjekatTS.Windows
             MainWindow mainWindow = new MainWindow();
             Window.GetWindow(this).Close();
             mainWindow.ShowDialog();
+
+        }
+
+        private void Istorija(object sender, RoutedEventArgs e)
+        {
+            Windows.Istorija istorija = new Windows.Istorija();
+            istorija.Show();
 
         }
 

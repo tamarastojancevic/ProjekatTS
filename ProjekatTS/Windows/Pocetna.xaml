@@ -67,19 +67,14 @@
                     <TextBlock Text="Zahtevi" FontSize="16" VerticalAlignment="Center" Margin="20,0,0,0" />
                 </StackPanel>
             </ListViewItem>
-            <ListViewItem Height="53">
-                <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="File" Width="25" Height="25" VerticalAlignment="Center" Margin="5" />
-                    <TextBlock Text="Evidencija" FontSize="16" VerticalAlignment="Center" Margin="20,0,0,0" />
-                </StackPanel>
-            </ListViewItem>
+       
         </ListView>
 
         <Button Margin="10,581,966.4,9.8" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="BtnLogout">
             <materialDesign:PackIcon Kind="ExitToApp" Width="22" Height="22" VerticalAlignment="Center" Margin="5" RenderTransformOrigin="0.445,0.514" />
         </Button>
-        <Button Margin="10,501,966.4,9.8"  Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
-            <materialDesign:PackIcon Kind="QuestionMark" Width="22" Height="22" VerticalAlignment="Center" Margin="5" />
+        <Button Click="Istorija" Margin="10,501,966.4,9.8"  Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
+            <materialDesign:PackIcon Kind="Book" Width="22" Height="22" VerticalAlignment="Center" Margin="5" />
         </Button>
 
 

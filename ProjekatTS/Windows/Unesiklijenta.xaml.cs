@@ -43,11 +43,13 @@ namespace ProjekatTS.Windows
         {
             SQLiteConnection con = new SQLiteConnection("Data Source= projekat.db");
             con.Open();
-            SQLiteCommand cmd = new SQLiteCommand("insert into employers(ime, pib, adresa, status) values (@fullName, @pib, @adresa, 0)", con);
+            SQLiteCommand cmd = new SQLiteCommand("insert into employers(ime, pib, adresa, status, kontakt) values (@fullName, @pib, @adresa, Aktivan, @kontakt)", con);
             cmd.Parameters.AddWithValue("@fullName", fullName.Text);
             cmd.Parameters.AddWithValue("@pib", pib.Text);
             cmd.Parameters.AddWithValue("@adresa", adresa.Text);
-         
+            cmd.Parameters.AddWithValue("@kontakt", kontakt.Text);
+
+
             int i = cmd.ExecuteNonQuery();
 
             con.Close();

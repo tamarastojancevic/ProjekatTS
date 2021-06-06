@@ -137,12 +137,13 @@
     </ApplicationDefinition>
     <Compile Include="Class\Global.cs" />
     <Compile Include="Class\Prikaz.cs" />
+    <Compile Include="Class\StatusKlijenta.cs" />
     <Compile Include="Class\User.cs" />
     <Compile Include="Windows\ErrorWindow.xaml.cs">
       <DependentUpon>ErrorWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Evidencija.xaml.cs">
-      <DependentUpon>Evidencija.xaml</DependentUpon>
+    <Compile Include="Windows\Istorija.xaml.cs">
+      <DependentUpon>Istorija.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Unesiklijenta.xaml.cs">
       <DependentUpon>Unesiklijenta.xaml</DependentUpon>
@@ -157,7 +158,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\Evidencija.xaml">
+    <Page Include="Windows\Istorija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

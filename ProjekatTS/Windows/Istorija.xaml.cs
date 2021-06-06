@@ -12,56 +12,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ProjekatTS.Windows
 {
     /// <summary>
-    /// Interaction logic for Evidencija.xaml
+    /// Interaction logic for Istorija.xaml
     /// </summary>
-    public partial class Evidencija : UserControl
+    public partial class Istorija : Window
     {
-        public Evidencija()
+        public Istorija()
         {
             InitializeComponent();
         }
-
-        private void DataGrid(object sender, RoutedEventArgs e)
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            SQLiteConnection sQLiteConnection = new SQLiteConnection("Data Source= projekat.db");
+            DragMove();
         }
-        private void RequestsDataGrid()
+        private void BtnCancel(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                SQLiteConnection connection = new SQLiteConnection("Data Source=projekat.db;");
-                connection.Open();
-                SQLiteCommand command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM requests";
-                SQLiteDataAdapter DB = new SQLiteDataAdapter(command.CommandText, connection);
-                connection.Close();
-
-                DataSet DS = new DataSet();
-                DB.Fill(DS);
-
-                if (DS.Tables[0].Rows.Count > 0)
-                {
-                    requestsDataGrid.ItemsSource = DS.Tables[0].DefaultView;
-                }
-
-                Class.Prikaz.DSglobal = DS;
-
-            }
-            catch (Exception i)
-            {
-                MessageBox.Show(i.Message);
-            }
-
-
-
+            Close();
         }
-
         private void ClientDataGrid()
         {
             try
@@ -69,7 +40,7 @@ namespace ProjekatTS.Windows
                 SQLiteConnection connection = new SQLiteConnection("Data Source=projekat.db;");
                 connection.Open();
                 SQLiteCommand command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM employers";
+                command.CommandText = "SELECT * FROM employers where status = 0";
                 SQLiteDataAdapter DB = new SQLiteDataAdapter(command.CommandText, connection);
                 connection.Close();
 
