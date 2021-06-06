@@ -25,7 +25,6 @@ namespace ProjekatTS.Windows
         public Klijenti()
         {
             InitializeComponent();
-            ClientDataGrid();
         }
 
         private void unesiKlijenta(object sender, RoutedEventArgs e)
@@ -33,13 +32,10 @@ namespace ProjekatTS.Windows
             Windows.Unesiklijenta unesiKlijenta = new Windows.Unesiklijenta();
             unesiKlijenta.Show();
 
-            
+
 
         }
-        private void DataGrid(object sender, RoutedEventArgs e)
-        {
-            SQLiteConnection sQLiteConnection = new SQLiteConnection("Data Source= projekat.db");
-        }
+     
 
         private void ClientDataGrid()
         {

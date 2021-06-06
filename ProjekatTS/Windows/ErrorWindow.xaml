@@ -35,13 +35,18 @@
                     <GradientStop Color="Black"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <Image Source="/Help/logo.png" Width="70" HorizontalAlignment="Left" Margin="7,-14,0,0" Height="74" />
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Help/logo.png" Width="70" HorizontalAlignment="Left" Margin="7,-14,0,0" Height="74" />
 
+            </StackPanel>
+        
         </StackPanel>
-        <TextBlock HorizontalAlignment="Center"  Text="Pogrešno korisničko ime ili lozinka." FontSize="20" Margin="10,89,-28.6,107.8"/>
-        <TextBlock HorizontalAlignment="Center" Text=" Pokušajte ponovo" FontSize="20" Margin="10,115,0,107.8"/>
+        <TextBlock Text="GREŠKA" FontSize="20" HorizontalAlignment="Center"  Margin="0,-100,0,0" Foreground="#DD000000" Height="23" FontWeight="Bold"/>
 
-        <Button VerticalAlignment="Bottom" IsDefault="True" Click="ButtonOk" Content="Ok" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD" Margin="177,159,157.4,38.8"/>
+        <TextBlock HorizontalAlignment="Center"  Text="Pogrešno korisničko ime ili lozinka." FontSize="20" Margin="0,93,-28.6,107.8"/>
+        <TextBlock HorizontalAlignment="Center" Text=" Pokušajte ponovo" FontSize="20" Margin="10,117,0,107.8"/>
+
+        <Button VerticalAlignment="Bottom" IsDefault="True" Click="ButtonOk" Content="Ok" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD" Margin="157.4,160,157.4,38.8"/>
 
     </Grid>
 </Window>

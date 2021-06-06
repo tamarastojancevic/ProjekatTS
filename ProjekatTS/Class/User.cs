@@ -8,6 +8,7 @@ namespace ProjekatTS.Class
 {
     class User
     {
+
         private string pib;
         private string fullName;
         private string adresa;
@@ -21,7 +22,7 @@ namespace ProjekatTS.Class
             FullName = fullName;
             Pib = pib;
             Adresa = adresa;
-      
+
         }
 
         public string Username { get; set; }

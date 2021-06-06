@@ -1,0 +1,52 @@
+﻿<Window x:Class="ProjekatTS.Windows.ErrorZauzeto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatTS.Windows"
+        mc:Ignorable="d"
+        Title="ErrorZauzeto" Height="246.931" Width="463.878"
+                       WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+   xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+ TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid MouseDown="Grid_MouseDown" Margin="0,0,-0.4,-0.6">
+        <Border BorderBrush="#FFAEAEAE" OpacityMask="#FFBCBCBC" BorderThickness="1"/>
+        <StackPanel Height="40" Width="553.878" VerticalAlignment="Top">
+
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="60" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF3A3E69" Offset="0.559"/>
+                    <GradientStop Color="Black"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Help/logo.png" Width="70" HorizontalAlignment="Left" Margin="7,-14,0,0" Height="74" />
+
+            </StackPanel>
+
+        </StackPanel>
+        <TextBlock Text="GREŠKA" FontSize="20" HorizontalAlignment="Center"  Margin="0,-100,0,0" Foreground="#DD000000" Height="23" FontWeight="Bold"/>
+
+        <TextBlock HorizontalAlignment="Center"  Text="Ime klijenta već postoji!" FontSize="20" Margin="0,93,-28.6,107.8"/>
+        <TextBlock HorizontalAlignment="Center" Text=" Pokušajte ponovo" FontSize="20" Margin="10,117,0,107.8"/>
+
+        <Button VerticalAlignment="Bottom" IsDefault="True" Click="ButtonOk" Content="Ok" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD" Margin="157.4,160,157.4,38.8"/>
+
+    </Grid>
+</Window>
