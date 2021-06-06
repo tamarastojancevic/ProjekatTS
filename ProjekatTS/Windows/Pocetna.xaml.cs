@@ -1,7 +1,11 @@
 ﻿using System;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
 
 namespace ProjekatTS.Windows
 {
@@ -25,9 +29,8 @@ namespace ProjekatTS.Windows
             throw new NotImplementedException();
         }
 
-        private void BtnHelp(object sender, SelectionChangedEventArgs e)
-        {
-        }
+      
+      
         private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int index = ListViewMenu.SelectedIndex;

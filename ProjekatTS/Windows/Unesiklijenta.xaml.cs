@@ -72,9 +72,13 @@ namespace ProjekatTS.Windows
                 MessageBox.Show("Klijent uspešno sačuvan");
                 Close();
             }
-        
+            else
+            {
+                AreAllFieldsFilled();
+            }
 
         }
     
+
     }
 }
