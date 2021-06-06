@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,21 +41,20 @@ namespace ProjekatTS.Windows
 
         private void BtnSave(object sender, System.EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source= projekat.db;Integrated Security=True;User Instance=True");
-            SqlCommand cmd = new SqlCommand("sp_insert", con);
-            cmd.CommandType = CommandType.StoredProcedure;
+            SQLiteConnection con = new SQLiteConnection("Data Source= projekat.db");
+            con.Open();
+            SQLiteCommand cmd = new SQLiteCommand("insert into employers(ime, pib, adresa, status) values (@fullName, @pib, @adresa, 0)", con);
             cmd.Parameters.AddWithValue("@fullName", fullName.Text);
             cmd.Parameters.AddWithValue("@pib", pib.Text);
             cmd.Parameters.AddWithValue("@adresa", adresa.Text);
          
-            con.Open();
             int i = cmd.ExecuteNonQuery();
 
             con.Close();
 
             if (i != 0)
             {
-                MessageBox.Show(i + "Klijent uspešno sačuvan");
+                MessageBox.Show("Klijent uspešno sačuvan");
             }
 
 

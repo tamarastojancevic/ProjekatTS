@@ -9,28 +9,20 @@
     <Grid VerticalAlignment="Top" Background="Transparent" Margin="20,-200,0,0" >
 
 
-        <DataGrid x:Name="requestsDataGrid"  VerticalAlignment="Top" Background="White"  AutoGenerateColumns="False" Margin="0,200,-0.2,-57.6"  CanUserSortColumns="True" CanUserAddRows="True">
+        <DataGrid CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="True" x:Name="requestsDataGrid"  VerticalAlignment="Top" Background="White"   Margin="0,200,-0.2,-57.6"  >
 
 
 
             <DataGrid.Columns>
 
-                <DataGridTextColumn Header="_ID" Width="60"  Binding="{Binding id}"/>
-                <DataGridTextColumn Header="_Zahtev" Width="*"  Binding="{Binding zahtev}"/>
-                <DataGridTextColumn Header="_Cena" Width="*"  Binding="{Binding cena}"/>
-                <DataGridTextColumn Header="_Datum predaje" Width="*"  Binding="{Binding datum}"/>
-                <DataGridTextColumn Header="_Status" Width="*"  Binding="{Binding status}"/>
-                <DataGridTextColumn Header="_Poslodavac" Width="*"  Binding="{Binding employer}"/>
-
-
-
+           
 
 
             </DataGrid.Columns>
 
 
         </DataGrid>
-        <StackPanel Orientation="Horizontal" Margin="0,600,0,0" >
+        <StackPanel Orientation="Horizontal" Margin="-100,600,0,0" >
             <Button Margin="230,0,40,0" Click="unesiZahtev" Content="Unesi zahtev" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
             <Button Content="Ukloni zahtev" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
 

@@ -25,7 +25,7 @@ namespace ProjekatTS.Windows
         public Klijenti()
         {
             InitializeComponent();
-            ClientDataGrid();
+            clientDataGrid();
         }
 
         private void unesiKlijenta(object sender, RoutedEventArgs e)

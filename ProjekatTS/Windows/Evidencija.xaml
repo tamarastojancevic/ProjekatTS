@@ -6,7 +6,34 @@
              xmlns:local="clr-namespace:ProjekatTS"
              mc:Ignorable="d" 
               d:DesignHeight="551.2" d:DesignWidth="816.8">
-    <Grid>
-            
+    <Grid >
+
+        <DataGrid x:Name="clientDataGrid" VerticalAlignment="Top" Background="White" CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="True" >
+
+
+
+            <DataGrid.Columns>
+
+
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+
+        <DataGrid CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="True" x:Name="requestsDataGrid"   Background="White"   Height="32.8"  >
+
+
+
+            <DataGrid.Columns>
+
+
+
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+
     </Grid>
 </UserControl>
