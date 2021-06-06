@@ -204,11 +204,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Class\Global.cs" />
+    <Compile Include="Class\Klijent.cs" />
     <Compile Include="Class\Prikaz.cs" />
     <Compile Include="Class\StatusKlijenta.cs" />
     <Compile Include="Class\StatusZahteva.cs" />
     <Compile Include="Class\User.cs" />
-    <Compile Include="Class\UserControl.cs" />
     <Compile Include="Windows\ErrorPrazno.xaml.cs">
       <DependentUpon>ErrorPrazno.xaml</DependentUpon>
     </Compile>

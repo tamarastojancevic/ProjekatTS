@@ -87,3 +87,4 @@ C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\ErrorPrazno.g
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\ErrorZauzeto.g.cs
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\ErrorPrazno.baml
 C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\Windows\ErrorZauzeto.baml
+C:\Users\Tamara\Desktop\PS\ProjekatTS\ProjekatTS\obj\Debug\ProjekatTS.csprojAssemblyReference.cache

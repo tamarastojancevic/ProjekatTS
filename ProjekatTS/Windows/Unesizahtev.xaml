@@ -71,7 +71,7 @@
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Width="700" Height="100" Margin="0,360,0,0">
-            <Button Click="ButtonSave" Content="Sačuvaj" Margin="180,0,0,0" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
+            <Button  Content="Sačuvaj" Margin="180,0,0,0" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
             <Button Click="ButtonCancel" IsCancel="True" Content="Otkaži" Margin="80,0,0,0" Height="50" Width="130" BorderBrush="{x:Null}" Background="#FF97A0AD"/>
 
         </StackPanel>

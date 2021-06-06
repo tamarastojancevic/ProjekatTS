@@ -92,7 +92,7 @@ namespace ProjekatTS
       
         private bool isUserExist(string fullName, string password)
             {
-                foreach (Class.User user in Class.Global.Users)
+            foreach (Class.User user in Class.Global.Users)
                 {
                     if ((user.Username == fullName) && (user.Password == password))
                         return true;
