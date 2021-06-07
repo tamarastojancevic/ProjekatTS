@@ -6,6 +6,7 @@ using System.Windows.Input;
 using iText.Kernel.Pdf;
 using iText.Layout;
 using iText.Layout.Element;
+using System.Diagnostics;
 
 namespace ProjekatTS.Windows
 {
@@ -14,6 +15,8 @@ namespace ProjekatTS.Windows
     /// </summary>
     public partial class Pocetna : Window
     {
+        private readonly object HelpNavigator;
+
         public Pocetna()
         {
             InitializeComponent();
@@ -66,6 +69,12 @@ namespace ProjekatTS.Windows
         private void BtnClose(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void BtnHelp(object sender, RoutedEventArgs e)
+        {
+            Process.Start("file://C:\\Users\\Tamara\\Desktop\\Projektovanje softvera prepravljeno\\ProjekatTS\\ProjekatTS\\Help\\Pomoc.chm");
+
         }
         private void BtnLogout(object sender, RoutedEventArgs e)
         {
