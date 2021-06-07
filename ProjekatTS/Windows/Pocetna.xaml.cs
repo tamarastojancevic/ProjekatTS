@@ -99,6 +99,7 @@ namespace ProjekatTS.Windows
             istorija.Show();
 
         }
+
         private void IstorijaZahteva(object sender, RoutedEventArgs e)
         {
             Windows.Istorija2 istorija2 = new Windows.Istorija2();
